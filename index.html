@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DevTools</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <header>
+
+    <div class="header-content">
+
+        <div>
+            <h1>DevTools</h1>
+            <p>Central de Comandos para TI</p>
+        </div>
+
+        <button id="themeToggle" class="theme-toggle">
+            🌙
+        </button>
+
+    </div>
+
+</header>
+    </header>
+
+    <main class="container">
+
+        <!-- DASHBOARD -->
+
+        <div class="dashboard">
+
+            <div class="stat-card">
+                <h3>Comandos</h3>
+                <strong id="totalCommands">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Categorias</h3>
+                <strong id="totalCategories">0</strong>
+            </div>
+
+            <div class="stat-card">
+                <h3>Favoritos</h3>
+                <strong id="totalFavorites">0</strong>
+            </div>
+
+        </div>
+
+
+        <!-- PESQUISA -->
+
+        <input
+            type="text"
+            class="search"
+            placeholder="🔎 Pesquise um comando..."
+        >
+
+
+        <!-- CATEGORIAS -->
+
+        <div class="categories">
+
+            <button class="category active" data-category="todos">
+                Todos
+            </button>
+
+            <button class="category" data-category="git">
+                Git
+            </button>
+
+            <button class="category" data-category="linux">
+                Linux
+            </button>
+
+            <button class="category" data-category="python">
+                Python
+            </button>
+
+            <button class="category" data-category="sql">
+                SQL
+            </button>
+
+            <button class="category" data-category="favoritos">
+                ⭐ Favoritos
+            </button>
+
+        </div>
+
+
+        <!-- COMANDOS -->
+
+        <div class="commands">
+
+
+            <!-- GIT -->
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git status</h2>
+                <p>Mostra o estado atual do repositório.</p>
+                <code>git status</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git clone</h2>
+                <p>Clona um repositório remoto.</p>
+                <code>git clone URL_DO_REPOSITORIO</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git add</h2>
+                <p>Adiciona arquivos para o próximo commit.</p>
+                <code>git add .</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git commit</h2>
+                <p>Registra as alterações no repositório.</p>
+                <code>git commit -m "mensagem"</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git push</h2>
+                <p>Envia alterações para o repositório remoto.</p>
+                <code>git push</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="git">
+                <button class="favorite">☆</button>
+                <h2>git pull</h2>
+                <p>Baixa as alterações do repositório remoto.</p>
+                <code>git pull</code>
+                <button>Copiar</button>
+            </div>
+
+
+            <!-- LINUX -->
+
+            <div class="command-card" data-category="linux">
+                <button class="favorite">☆</button>
+                <h2>mkdir</h2>
+                <p>Cria uma nova pasta.</p>
+                <code>mkdir nome-da-pasta</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="linux">
+                <button class="favorite">☆</button>
+                <h2>cd</h2>
+                <p>Acessa uma pasta pelo terminal.</p>
+                <code>cd nome-da-pasta</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="linux">
+                <button class="favorite">☆</button>
+                <h2>ls</h2>
+                <p>Lista arquivos e pastas.</p>
+                <code>ls</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="linux">
+                <button class="favorite">☆</button>
+                <h2>pwd</h2>
+                <p>Mostra o diretório atual.</p>
+                <code>pwd</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="linux">
+                <button class="favorite">☆</button>
+                <h2>clear</h2>
+                <p>Limpa o terminal.</p>
+                <code>clear</code>
+                <button>Copiar</button>
+            </div>
+
+
+            <!-- PYTHON -->
+
+            <div class="command-card" data-category="python">
+                <button class="favorite">☆</button>
+                <h2>python --version</h2>
+                <p>Mostra a versão instalada do Python.</p>
+                <code>python --version</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="python">
+                <button class="favorite">☆</button>
+                <h2>pip install</h2>
+                <p>Instala um pacote Python.</p>
+                <code>pip install nome-do-pacote</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="python">
+                <button class="favorite">☆</button>
+                <h2>python</h2>
+                <p>Inicia o interpretador Python.</p>
+                <code>python</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="python">
+                <button class="favorite">☆</button>
+                <h2>pip list</h2>
+                <p>Lista os pacotes Python instalados.</p>
+                <code>pip list</code>
+                <button>Copiar</button>
+            </div>
+
+
+            <!-- SQL -->
+
+            <div class="command-card" data-category="sql">
+                <button class="favorite">☆</button>
+                <h2>SELECT</h2>
+                <p>Consulta registros de uma tabela.</p>
+                <code>SELECT * FROM usuarios;</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="sql">
+                <button class="favorite">☆</button>
+                <h2>INSERT</h2>
+                <p>Insere um novo registro.</p>
+                <code>INSERT INTO usuarios VALUES (...);</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="sql">
+                <button class="favorite">☆</button>
+                <h2>UPDATE</h2>
+                <p>Atualiza registros existentes.</p>
+                <code>UPDATE usuarios SET nome = 'João';</code>
+                <button>Copiar</button>
+            </div>
+
+            <div class="command-card" data-category="sql">
+                <button class="favorite">☆</button>
+                <h2>DELETE</h2>
+                <p>Remove registros de uma tabela.</p>
+                <code>DELETE FROM usuarios WHERE id = 1;</code>
+                <button>Copiar</button>
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
